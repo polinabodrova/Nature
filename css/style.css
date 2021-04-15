@@ -24,11 +24,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right,
-      rgb(126, 213, 111, 0.7),
-      rgb(40, 180, 131, 0.7)
-    ),
+  background-image: linear-gradient(to right, #80d56fb3, rgb(40, 180, 131, 0.7)),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
@@ -108,6 +104,17 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: transtate(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -154,4 +161,9 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
