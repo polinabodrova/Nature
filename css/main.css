@@ -282,7 +282,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: lightskyblue;
   float: left;
 }
 
