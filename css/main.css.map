@@ -13,7 +13,7 @@
         "components/_button.scss",
         "components/_composition.scss",
         "layout/_header.scss",
-        "layout/_gtid.scss",
+        "layout/_grid.scss",
         "pages/_home.scss"
     ],
     "names": [],
